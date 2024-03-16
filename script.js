@@ -1,4 +1,8 @@
 const url = "https://restcountries.com/v3.1/all"
+
+
+//to display the fetched data in console to html page
+
 const res = fetch(url);
 res.then((data)=>data.json())
     .then((ele)=>{
@@ -39,7 +43,7 @@ res.then((data)=>data.json())
         
     })
     
-
+//Fetch request to get  weather  data using country name
 function getData(countryName)
     {
         var API= "c02261a4253df3ce46b5c3e7b4d4bc82";
